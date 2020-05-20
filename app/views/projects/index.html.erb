@@ -1,0 +1,28 @@
+<h2>All Your Projects</h2>
+
+<div class="container-index">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Projects</th>
+        <th scope="col">Description</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+        <th scope="row">
+       
+            
+            <% @projects.each do |project| %>   
+        <tr>
+                <td><%= project.name %></td>
+                <td><%= project.description %></td>
+                <td><%= project.date %></td>
+        </tr>
+                <% end %>
+      
+    </th>     
+         
+    </tbody>
+</table>
+</div>

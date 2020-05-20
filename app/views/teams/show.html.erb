@@ -1,0 +1,13 @@
+
+<h2> <%= @team.name %> </h2>
+
+  <%  @team.members.each do |member| %>
+    <%= member.name %>
+<% end %>
+
+<%#= form_for @member do |f|%>
+  
+<%# end %>
+
+<%= button_to("Create a Project", new_project_path, { :method => :get })%>
+

@@ -1,0 +1,2 @@
+class LabelTasksController < ApplicationController
+end

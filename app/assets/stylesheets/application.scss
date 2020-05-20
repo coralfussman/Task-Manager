@@ -1,0 +1,154 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ 
+ */
+ @import "bootstrap";
+ @import '_base.scss';
+ @import '_nav.scss';
+ @import 'home_pages.scss';
+ 
+ ul.nav a:hover { color: rgb(199, 238, 233) !important; }
+ 
+ .container {
+    padding-top: 15px;
+}
+
+.container-forms {
+    
+   
+    max-width: 60%;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow:  2px 2px 1px rgb(204, 204, 204);
+    
+  }
+
+  .svg-icon {
+    width: 100%;
+  }
+
+
+.container-index {
+    
+    
+    height: 45%;
+    overflow: auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow:  5px 5px 1px rgb(204, 204, 204);
+    
+  }
+  .container-show {
+    
+    overflow: auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow:  5px 5px 1px rgb(204, 204, 204);
+    
+  }
+  
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+.button-purp {
+    background-color: rgb(112, 6, 74); 
+    border-radius: 1000px;
+    padding: 20px 37px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    --webkit-box-shadow: 0px 15px 44px -10px rgba(0,0,0,0.75);
+    --moz-box-shadow: 0px 15px 44px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 15px 44px -10px rgba(0,0,0,0.75);
+  }
+
+  button-aq {
+    background-color: rgb(152, 237, 194); 
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 50px;
+    --webkit-box-shadow: 0px 15px 44px -10px rgba(0,0,0,0.75);
+    --moz-box-shadow: 0px 15px 44px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 15px 44px -10px rgba(0,0,0,0.75);
+  }
+  button {
+    margin: 2em auto;
+    display: block;
+    -webkit-appearance: none;
+    border: 6px solid rgba(255,255,255,0.45);
+    border-radius: 50px;
+    padding: 1em 3em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-clip: padding-box;
+    position: relative;
+    color: #FFF;
+  }
+  button:before {
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50px;
+    z-index: -1;
+    filter: blur(14px);
+    background-image: linear-gradient(90deg, rgb(152, 237, 194), rgb(112, 6, 74));
+  }
+  button:after {
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50px;
+    z-index: -1;
+    filter: blur(14px);
+    background-image: linear-gradient(90deg, rgb(112, 6, 74), rgb(152, 237, 194));
+  }
+  
+  .hp-logo {
+    display: flex; 
+    margin-left: auto;
+    width: 20%;
+    position: absolute;
+    
+}
+
+.error {
+    color: rgb(180, 8, 117); 
+    font-weight: 700;
+    font-size: 30px;
+    
+}
+
+.show-pg {
+    font-weight: 300;
+    font-size: 20px;
+
+}

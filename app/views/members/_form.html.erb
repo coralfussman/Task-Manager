@@ -1,0 +1,30 @@
+<div class="container-forms">
+   
+<%= form_for @member do |f| %>
+<div class="row">
+    <div class="col">
+        <div class="svg-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 161 176.47"><defs><style>.cls-1,.cls-4,.cls-5{fill:none;}.cls-2{fill:#ccc;}.cls-3{clip-path:url(#clip-path);}.cls-4,.cls-5{stroke:#70064a;stroke-miterlimit:10;}.cls-4{stroke-width:5px;}.cls-5{stroke-width:6px;}</style><clipPath id="clip-path"><circle class="cls-1" cx="80.5" cy="80.5" r="72"/></clipPath></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle class="cls-2" cx="80.5" cy="80.5" r="80.5"/><g class="cls-3"><circle class="cls-4" cx="80.29" cy="65.07" r="26.16"/><ellipse class="cls-4" cx="80.29" cy="132.5" rx="33.65" ry="41.46"/></g><circle class="cls-5" cx="80.5" cy="80.5" r="72"/></g></g></svg>
+            </div>
+    </div>
+<div class="col">
+    <ol><%= f.label :name %></ol>
+<ol><%= f.label :username %></ol>
+<ol><%= f.label :email %></ol>
+<ol>   <%= f.label :password %></ol>
+</div>
+<div class="col">
+    <%= f.text_field :name %>
+
+    <%= f.text_field :username %>
+
+    <%= f.text_field :email %>
+
+    <%= f.text_field :password %>
+
+    <%= f.submit class: 'button-aq' %>
+</div>
+</div>
+<% end %>
+
+</div>

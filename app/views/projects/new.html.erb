@@ -1,0 +1,12 @@
+<h2>Create a Project</h2>
+
+<div class="error">
+    <% if flash[:project_errors] %>
+    <%  flash[:project_errors].each do |error|%>
+    <%= error.upcase %>
+    <% end %>
+    <% end %>
+</div>
+
+
+<%= render 'form' %> 

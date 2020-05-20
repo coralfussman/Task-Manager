@@ -1,0 +1,14 @@
+<div class="error">
+
+<% if flash[:member_error] %>
+    <%  flash[:member_error].each do |error|%>
+    <%= error.upcase %>
+    <% end %>
+    <% end %>
+</div>
+
+<h2>WELCOME TO DIVI!</h2>
+<h3>Your team awaits, Create a profile to begin</h3>
+
+
+<%= render 'form' %> 

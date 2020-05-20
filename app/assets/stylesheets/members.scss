@@ -1,0 +1,45 @@
+// Place all the styles related to the Members controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.flex-grid {
+    display: flex;
+  }
+  .flex-grid .col-mem {
+    flex: 1;
+  }
+  .flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-grid-thirds .col-mem {
+    width: 32%;
+  }
+  
+  @media (max-width: 400px) {
+    .flex-grid,
+    .flex-grid-thirds {
+      display: block;
+      .col-mem {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+  
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 20px;
+  }
+  .flex-grid { 
+    margin: 0 0 20px 0;
+  }
+  .col-mem {
+    background: salmon;
+    padding: 20px;
+  }
+
+  

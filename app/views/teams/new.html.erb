@@ -1,0 +1,10 @@
+<% if flash[:team_error] %>
+<%  flash[:team_error].each do |error|%>
+<p><%= error %></p>
+<% end %>
+<% end %>
+
+<h2>Create a Team</h2>
+
+
+<%= render 'form' %> 

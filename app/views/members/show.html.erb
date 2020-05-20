@@ -1,0 +1,30 @@
+<% if flash[:success] %>
+<% flash[:success].each do |success| %>
+<p><%= success %></p>
+<% end %>
+<% end %>
+
+<h2>Welcome <%= @member.name %> </h2>
+
+<h3>Your Dashboard</h3>
+
+<div class="flex-grid-thirds">
+<% @member.teams.each do |team| %>
+<div class="col-mem">
+    <%= team.name %>
+</div>
+
+<% team.projects.each do |project| %>
+<div class="col-mem">
+    <p><%= project.name %></p>
+</div>
+
+<% end %>
+<% end %>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+
+    
+  </div>
